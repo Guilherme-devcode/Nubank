@@ -2,52 +2,53 @@
 <html>
 
 <head>
-    <title>Glassmorphism</title>
+    <title>Nubank</title>
     <link rel="stylesheet" href="style.css">
+    <script src="https://unpkg.com/boxicons@2.0.9/dist/boxicons.js"></script>
     <script type="text/javascript" src="glass.js"></script>
+
 </head>
 
 <body>
-    <nav class="navMenu">
-        <a href="#">Inicio</a>
-        <a href="#">Blog</a>
-        <a href="#">Sobre</a>
-        <div class="dot"></div>
-    </nav>
+    <header class="header">
+        <nav class="navbar">
+            <div class="navbar-container container">
+                <div class="logo">
+                    <img src="navlogo.png" alt="">
+                </div>
+                <ul class="menu-items">
+                    <li><a href="#about">Faça seu cadastro</a></li>
+                    <li><a href="#my-works">Sobre a empresa</a></li>
+                    <li><a href="#contact-me">Contato</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
     <div class="container">
-        <div class="card">
-            <div class="content">
-                <h2>01</h2>
-                <h3>Primeiro Card</h3>
-                <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna."</p>
-                <a href="#">Ler mais</a>
-            </div>
+        <div class="sidecard">
+            <h1 class="sideh1">Simples, transparente e <br>inovador: conheça o <br> Nubank.</h1>
+            <h2>Faça como outros 40 milhões de brasileiros e veja como é prático e fácil estar no controle da sua vida financeira com o Nubank.</h2>
         </div>
         <div class="card">
-            <div class="content">
-                <h2>02</h2>
-                <h3>Segundo Card</h3>
-                <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna."</p>
-                <a href="#">Ler mais</a>
+            <div class="face front">
+                <img src="Mastercard.png" class="mastercard">
+                <img class="chip" src="https://img.icons8.com/office/80/000000/sim-card-chip.png" />
+                <img src="aprox.png" class="aprox">
+                <h5 class="card-holder">GUILHERME M ROCHA</h5>
+                <img class="logo" src="logo.png" />
+
             </div>
         </div>
-        <div class="card">
-            <div class="content">
-                <h2>03</h2>
-                <h3>Terceiro Card</h3>
-                <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna."</p>
-                <a href="#">Ler Mais</a>
-            </div>
-        </div>
-    </div>
-    <script type="text/javascript">
-        VanillaTilt.init(document.querySelectorAll(".card"), {
-            max: 25,
-            speed: 400,
-            glare: true,
-            "max-glare": 1,
-        });
-    </script>
+
+
+        <script type="text/javascript">
+            VanillaTilt.init(document.querySelectorAll(".card"), {
+                max: 25,
+                speed: 400,
+                glare: true,
+                "max-glare": 1,
+            });
+        </script>
 </body>
 
 </html>
