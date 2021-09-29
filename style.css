@@ -58,7 +58,7 @@
             max-height: 150px;
             position: absolute;
             top: -160px;
-            left: -400px;
+            left: -360px;
         }
         /*card*/
         
@@ -137,7 +137,7 @@
         .container .card .card__top {
             display: flex;
             justify-content: space-between;
-            align-item: center;
+            align-items: center;
         }
         
         .container .card .content {
