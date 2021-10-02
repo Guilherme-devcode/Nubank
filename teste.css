@@ -255,47 +255,181 @@ body::before {
     position: absolute;
 }
 
-#about {
+
+/*cartao de credito*/
+
+#credit-card {
+    position: absolute;
     width: 1353px;
-    height: 1000px;
+    height: 900px;
     margin-left: -10px;
     margin-top: 36.2em;
     background: white;
 }
 
+#credit-card a {
+    position: absolute;
+    top: 150px;
+    left: 60px;
+    font-weight: 550;
+    font-size: 40px;
+    color: #952FFF;
+    text-decoration: none;
+}
+
+#credit-card .float-card p {
+    position: absolute;
+    top: 200px;
+    left: 60px;
+    font-weight: 550;
+    font-size: 40px;
+}
+
+#credit-card .img-card img {
+    position: absolute;
+    left: 50em;
+    top: 5em;
+}
+
+
+/*conta*/
+
+#acount {
+    position: absolute;
+    width: 1353px;
+    height: 750px;
+    margin-left: -10px;
+    margin-top: 75em;
+    background: #eceeee;
+}
+
+#acount .acount-cell a {
+    position: absolute;
+    top: 150px;
+    left: 60px;
+    font-weight: 550;
+    font-size: 40px;
+    color: #952FFF;
+    text-decoration: none;
+}
+
+#acount .acount-cell p {
+    position: absolute;
+    top: 200px;
+    left: 60px;
+    font-weight: 550;
+    font-size: 40px;
+}
+
+#acount .img-acount img {
+    position: absolute;
+    left: 50em;
+    top: 5em;
+}
+
 
 /*footer*/
 
+.footer-distributed {
+    background-color: #292c2f;
+    box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
+    box-sizing: border-box;
+    width: 100%;
+    text-align: left;
+    font: normal 16px sans-serif;
+    padding: 45px 50px;
+}
+
+.footer-distributed .footer-left p {
+    color: white;
+    font-size: 14px;
+    margin: 0;
+}
+
+
+/* Footer links */
+
 footer {
-    padding-top: 30px;
-    background-color: #142d4c;
-    color: #ececec;
+    position: relative;
+    top: 120em;
 }
 
-footer a {
-    color: rgb(211, 211, 211);
+.footer-distributed {
+    background-color: #4f3580;
+}
+
+.footer-distributed p.footer-links {
+    font-size: 18px;
+    font-weight: bold;
+    color: #ffffff;
+    margin: 0 0 10px;
+    padding: 0;
+    transition: ease .25s;
+}
+
+.footer-distributed p.footer-links a {
+    display: inline-block;
+    line-height: 1.8;
     text-decoration: none;
+    color: inherit;
+    transition: ease .25s;
 }
 
-footer a:hover,
-footer a:focus {
-    color: #aaa;
-    text-decoration: none;
-    border-bottom: 1px dotted #999;
+.footer-distributed .footer-links a:before {
+    content: "·";
+    font-size: 20px;
+    left: 0;
+    color: #fff;
+    display: inline-block;
+    padding-right: 5px;
 }
 
-footer .form-control {
-    background-color: #385170;
-    box-shadow: 0 1px 0 0 rgba(255, 255, 255, 0.1);
-    border: none;
-    resize: none;
-    color: #d1d2d2;
-    padding: 0.7em 1em;
+.footer-distributed .footer-links .link-1:before {
+    content: none;
 }
 
-footer #btn {
-    background-color: #ececec;
-    margin-top: 10px;
-    color: #385170;
-    border-radius: 5px;
+.footer-distributed .footer-right {
+    float: right;
+    margin-top: 6px;
+    max-width: 180px;
+}
+
+.footer-distributed .footer-right a {
+    display: inline-block;
+    width: 35px;
+    height: 35px;
+    background-color: #952FFF;
+    border-radius: 10px;
+    font-size: 20px;
+    color: #ffffff;
+    text-align: center;
+    line-height: 35px;
+    margin-left: 3px;
+    transition: all .25s;
+}
+
+.footer-distributed .footer-right a:hover {
+    transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+}
+
+.footer-distributed p.footer-links a:hover {
+    text-decoration: underline;
+}
+
+
+/* Media Queries */
+
+@media (max-width: 600px) {
+    .footer-distributed .footer-left,
+    .footer-distributed .footer-right {
+        text-align: center;
+    }
+    .footer-distributed .footer-right {
+        float: none;
+        margin: 0 auto 20px;
+    }
+    .footer-distributed .footer-left p.footer-links {
+        line-height: 1.8;
+    }
 }
